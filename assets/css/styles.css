@@ -103,6 +103,18 @@ nav{display:flex;align-items:center;justify-content:space-between;height:70px;}
 .carousel-dots button{width:11px;height:11px;border-radius:50%;border:0;background:#c3d0c4;cursor:pointer;padding:0;transition:background .2s,transform .2s;}
 .carousel-dots button.active{background:var(--verde);transform:scale(1.25);}
 
+/* ===== CATALOGO (vivero) ===== */
+.catalog{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:22px;}
+.cat-item{background:#fff;border-radius:14px;overflow:hidden;border:1px solid #e2ebe2;box-shadow:0 6px 16px rgba(0,0,0,.08);display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s;}
+.cat-item:hover{transform:translateY(-4px);box-shadow:0 12px 26px rgba(0,0,0,.14);}
+.cat-item img{width:100%;aspect-ratio:1/1;object-fit:cover;}
+.cat-item .body{padding:16px 16px 18px;display:flex;flex-direction:column;flex:1;}
+.cat-item h4{color:var(--azul-osc);font-size:18px;margin-bottom:4px;}
+.cat-item p{color:var(--gris);font-size:14px;margin-bottom:14px;flex:1;}
+.cat-item .ask{margin-top:auto;display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#25D366;color:#fff;font-weight:700;font-size:14px;padding:10px 14px;border-radius:24px;transition:background .2s;}
+.cat-item .ask:hover{background:#1ebe5a;}
+.cat-item .ask svg{width:17px;height:17px;fill:#fff;}
+
 /* ===== CTA BANNER ===== */
 .cta-banner{background:linear-gradient(135deg,var(--azul),var(--azul-osc));color:#fff;text-align:center;border-radius:20px;padding:50px 30px;}
 .cta-banner h2{color:#fff;}
@@ -147,4 +159,6 @@ footer .copy{font-size:13px;opacity:.7;margin-top:18px;border-top:1px solid rgba
   .split img{order:-1;}
   .carousel-viewport{aspect-ratio:4/3;}
   .carousel-btn{width:40px;height:40px;font-size:22px;}
+  .catalog{grid-template-columns:1fr 1fr;gap:14px;}
+  .cat-item h4{font-size:16px;}
 }
