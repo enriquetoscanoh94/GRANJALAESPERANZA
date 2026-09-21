@@ -13,12 +13,12 @@
 <header>
   <nav class="container">
     <a href="#inicio" class="brand">
-      <img src="img/logo.jpg" alt="Logo Granja La Esperanza">
+      <img src="img/logo.png" alt="Logo Granja La Esperanza">
       <span>Granja La Esperanza<small>MOVIMIENTO 24 HORAS · A.A.</small></span>
     </a>
     <div class="nav-links" id="menu">
       <a href="#nosotros">Nosotros</a>
-      <a href="#instalaciones">Instalaciones</a>
+      <a href="#galeria">Galería</a>
       <a href="#proceso">Ingreso</a>
       <a href="#granja">Vivero</a>
       <a href="#ubicacion">Ubicación</a>
@@ -30,7 +30,7 @@
 
 <!-- ===== HERO ===== -->
 <section class="hero" id="inicio">
-  <img src="img/logo.jpg" alt="Granja La Esperanza" class="logo">
+  <img src="img/logo.png" alt="Granja La Esperanza" class="logo">
   <span class="badge24">ABIERTO 24 HORAS · LOS 365 DÍAS</span>
   <h1>Granja La Esperanza</h1>
   <p class="lead">Centro de internamiento para varones del Movimiento Internacional 24 Horas de Alcohólicos Anónimos. Una nueva oportunidad para dejar atrás las adicciones, con trato digno y humanista.</p>
@@ -74,26 +74,42 @@
   </div>
 </section>
 
-<!-- ===== INSTALACIONES (carrusel) ===== -->
-<section id="instalaciones">
+<!-- ===== GALERIA ===== -->
+<section id="galeria">
   <div class="container">
-    <h2>Nuestras instalaciones</h2>
-    <p class="sub">Un espacio digno para la recuperación: salón de juntas, comedor bajo palapa, jardines, cocina, dormitorios y amplios terrenos.</p>
-    <div class="carousel" data-carousel>
-      <div class="carousel-viewport">
-        <figure class="carousel-slide active"><img src="img/instalaciones-edificio.jpg" alt="Edificio principal"><figcaption>Edificio principal</figcaption></figure>
-        <figure class="carousel-slide"><img src="img/instalaciones-palapa.jpg" alt="Palapa y comedor"><figcaption>Comedor y palapa central</figcaption></figure>
-        <figure class="carousel-slide"><img src="img/instalaciones-junta.jpg" alt="Salón de juntas"><figcaption>Salón de juntas y terapias</figcaption></figure>
-        <figure class="carousel-slide"><img src="img/instalaciones-salon.jpg" alt="Interior con lecturas de A.A."><figcaption>Rincón de reflexión</figcaption></figure>
-        <figure class="carousel-slide"><img src="img/instalaciones-fuente.jpg" alt="Fuente y jardín"><figcaption>Fuente y jardines</figcaption></figure>
-        <figure class="carousel-slide"><img src="img/instalaciones-comunidad.jpg" alt="Convivencia en la granja"><figcaption>Comunidad y convivencia</figcaption></figure>
-        <figure class="carousel-slide"><img src="img/fachada.jpg" alt="Entrada de la granja"><figcaption>Entrada y accesos</figcaption></figure>
-      </div>
-      <button class="carousel-btn prev" aria-label="Anterior">‹</button>
-      <button class="carousel-btn next" aria-label="Siguiente">›</button>
-      <div class="carousel-counter"><span class="cur">1</span>/7</div>
+    <h2>Recorre la granja en imágenes</h2>
+    <p class="sub">Nuestras instalaciones, los cultivos y los animales. Un lugar digno donde el trabajo en el campo es parte del camino a la recuperación.</p>
+
+    <div class="gal-filters">
+      <button class="gal-chip active" data-filter="all">Todas</button>
+      <button class="gal-chip" data-filter="instalaciones">Instalaciones</button>
+      <button class="gal-chip" data-filter="cultivos">Cultivos</button>
+      <button class="gal-chip" data-filter="animales">Animales</button>
     </div>
-    <div class="carousel-dots"></div>
+
+    <div class="gallery" id="gallery">
+      <!-- Instalaciones -->
+      <figure class="gal-item" data-cat="instalaciones"><img src="img/fachada.jpg" alt="Entrada de la granja sobre la carretera Pinotepa–Collantes" loading="lazy"><figcaption><span class="tag">Instalaciones</span><b>Entrada principal</b></figcaption></figure>
+      <figure class="gal-item" data-cat="instalaciones"><img src="img/instalaciones-edificio.jpg" alt="Edificio principal con los emblemas del grupo 24 Horas de A.A." loading="lazy"><figcaption><span class="tag">Instalaciones</span><b>Edificio principal</b></figcaption></figure>
+      <figure class="gal-item" data-cat="instalaciones"><img src="img/instalaciones-palapa.jpg" alt="Comedor bajo palapa rodeado de jardín" loading="lazy"><figcaption><span class="tag">Instalaciones</span><b>Comedor bajo palapa</b></figcaption></figure>
+      <figure class="gal-item" data-cat="instalaciones"><img src="img/instalaciones-junta.jpg" alt="Junta de recuperación por la noche bajo la palapa" loading="lazy"><figcaption><span class="tag">Instalaciones</span><b>Junta de recuperación</b></figcaption></figure>
+      <figure class="gal-item" data-cat="instalaciones"><img src="img/instalaciones-salon.jpg" alt="Rincón de reflexión con lecturas de A.A. y plantas" loading="lazy"><figcaption><span class="tag">Instalaciones</span><b>Rincón de reflexión</b></figcaption></figure>
+      <figure class="gal-item" data-cat="instalaciones"><img src="img/instalaciones-fuente.jpg" alt="Fuente en el jardín central de la granja" loading="lazy"><figcaption><span class="tag">Instalaciones</span><b>Fuente y jardín</b></figcaption></figure>
+      <figure class="gal-item" data-cat="instalaciones"><img src="img/instalaciones-comunidad.jpg" alt="Baile folclórico en un día de convivencia" loading="lazy"><figcaption><span class="tag">Instalaciones</span><b>Convivencia y cultura</b></figcaption></figure>
+
+      <!-- Cultivos -->
+      <figure class="gal-item" data-cat="cultivos"><img src="img/maiz.jpg" alt="Milpa de maíz sembrada por los compañeros" loading="lazy"><figcaption><span class="tag">Cultivos</span><b>Milpa de maíz</b></figcaption></figure>
+      <figure class="gal-item" data-cat="cultivos"><img src="img/platano.jpg" alt="Plantío de plátano en la granja" loading="lazy"><figcaption><span class="tag">Cultivos</span><b>Plátano</b></figcaption></figure>
+      <figure class="gal-item" data-cat="cultivos"><img src="img/girasoles.jpg" alt="Campo de girasoles al atardecer" loading="lazy"><figcaption><span class="tag">Cultivos</span><b>Girasoles</b></figcaption></figure>
+      <figure class="gal-item" data-cat="cultivos"><img src="img/tractor.jpg" alt="Tractor y equipo para el trabajo de campo" loading="lazy"><figcaption><span class="tag">Cultivos</span><b>Trabajo de campo</b></figcaption></figure>
+
+      <!-- Animales -->
+      <figure class="gal-item" data-cat="animales"><img src="img/cerdos.jpg" alt="Cerdos de engorda en el corral" loading="lazy"><figcaption><span class="tag">Animales</span><b>Cerdos de engorda</b></figcaption></figure>
+      <figure class="gal-item" data-cat="animales"><img src="img/borregos.jpg" alt="Borregos pelibuey en el potrero" loading="lazy"><figcaption><span class="tag">Animales</span><b>Borregos</b></figcaption></figure>
+      <figure class="gal-item" data-cat="animales"><img src="img/gallinas.jpg" alt="Gallinas ponedoras en el gallinero" loading="lazy"><figcaption><span class="tag">Animales</span><b>Gallinas ponedoras</b></figcaption></figure>
+      <figure class="gal-item" data-cat="animales"><img src="img/pollos.jpg" alt="Pollos de engorda en la granja" loading="lazy"><figcaption><span class="tag">Animales</span><b>Pollos de engorda</b></figcaption></figure>
+      <figure class="gal-item" data-cat="animales"><img src="img/guajolotes.jpg" alt="Guajolotes criados en la granja" loading="lazy"><figcaption><span class="tag">Animales</span><b>Guajolotes</b></figcaption></figure>
+    </div>
   </div>
 </section>
 
@@ -125,116 +141,33 @@
   </div>
 </section>
 
-<!-- ===== VIVERO / GRANJA (carruseles) ===== -->
+<!-- ===== VIVERO (sub-marca) ===== -->
 <section id="granja" class="granja">
   <div class="container">
     <p class="brandtag">UNA SUB-MARCA DE GRANJA LA ESPERANZA</p>
     <h2>Vivero Granja La Esperanza</h2>
-    <p class="sub">Como parte de la terapia ocupacional, los compañeros trabajan la tierra. Con la venta de árboles del vivero y de la producción del campo, la granja se mantiene por sus propios medios.</p>
+    <p class="sub">Como parte de la terapia ocupacional, los compañeros trabajan la tierra. Vendemos árboles frutales, palmas y plantas de vivero; con esas ventas y la producción del campo, la granja se mantiene por sus propios medios.</p>
 
-    <!-- Vivero (catálogo) -->
-    <p class="cat-title">🌱 Vivero — nuestro catálogo de árboles y palmas</p>
-    <div class="catalog">
-      <div class="cat-item">
-        <img src="img/coco-2.jpg" alt="Palma de coco">
-        <div class="body">
-          <h4>Palma de coco</h4>
-          <p>Plántulas de cocotero listas para trasplante.</p>
-          <a class="ask" href="https://wa.me/529541270356?text=Hola,%20me%20interesa%20la%20Palma%20de%20coco%20del%20vivero" target="_blank" rel="noopener">
-            <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.6c1.7.9 3.6 1.4 5.8 1.4C22.6 28.8 28 23.4 28 16.8 28 8.4 22.6 3 16 3zm0 21.9c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.9.7.8-3.8-.2-.4c-1-1.6-1.5-3.4-1.5-5.3C5.8 10.5 10.3 6 16 6c2.7 0 5.1 1 7 2.9 1.9 1.9 2.9 4.4 2.9 7-.1 5.5-4.5 9-9.9 9z"/></svg>
-            Preguntar
-          </a>
-        </div>
-      </div>
-      <div class="cat-item">
-        <img src="img/mango.jpg" alt="Mango injertado">
-        <div class="body">
-          <h4>Mango injertado</h4>
-          <p>Árboles de mango injertado para pronta producción.</p>
-          <a class="ask" href="https://wa.me/529541270356?text=Hola,%20me%20interesa%20el%20Mango%20injertado%20del%20vivero" target="_blank" rel="noopener">
-            <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.6c1.7.9 3.6 1.4 5.8 1.4C22.6 28.8 28 23.4 28 16.8 28 8.4 22.6 3 16 3zm0 21.9c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.9.7.8-3.8-.2-.4c-1-1.6-1.5-3.4-1.5-5.3C5.8 10.5 10.3 6 16 6c2.7 0 5.1 1 7 2.9 1.9 1.9 2.9 4.4 2.9 7-.1 5.5-4.5 9-9.9 9z"/></svg>
-            Preguntar
-          </a>
-        </div>
-      </div>
-      <div class="cat-item">
-        <img src="img/citricos-vivero.jpg" alt="Cítricos">
-        <div class="body">
-          <h4>Cítricos</h4>
-          <p>Árboles de limón y naranja en bolsa.</p>
-          <a class="ask" href="https://wa.me/529541270356?text=Hola,%20me%20interesan%20los%20C%C3%ADtricos%20del%20vivero" target="_blank" rel="noopener">
-            <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.6c1.7.9 3.6 1.4 5.8 1.4C22.6 28.8 28 23.4 28 16.8 28 8.4 22.6 3 16 3zm0 21.9c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.9.7.8-3.8-.2-.4c-1-1.6-1.5-3.4-1.5-5.3C5.8 10.5 10.3 6 16 6c2.7 0 5.1 1 7 2.9 1.9 1.9 2.9 4.4 2.9 7-.1 5.5-4.5 9-9.9 9z"/></svg>
-            Preguntar
-          </a>
-        </div>
-      </div>
-      <div class="cat-item">
-        <img src="img/guayaba.jpg" alt="Guayaba">
-        <div class="body">
-          <h4>Guayaba</h4>
-          <p>Plantas de guayaba de buen tamaño.</p>
-          <a class="ask" href="https://wa.me/529541270356?text=Hola,%20me%20interesa%20la%20Guayaba%20del%20vivero" target="_blank" rel="noopener">
-            <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.6c1.7.9 3.6 1.4 5.8 1.4C22.6 28.8 28 23.4 28 16.8 28 8.4 22.6 3 16 3zm0 21.9c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.9.7.8-3.8-.2-.4c-1-1.6-1.5-3.4-1.5-5.3C5.8 10.5 10.3 6 16 6c2.7 0 5.1 1 7 2.9 1.9 1.9 2.9 4.4 2.9 7-.1 5.5-4.5 9-9.9 9z"/></svg>
-            Preguntar
-          </a>
-        </div>
-      </div>
-      <div class="cat-item">
-        <img src="img/palma-vivero.jpg" alt="Plantas de vivero">
-        <div class="body">
-          <h4>Plantas de vivero</h4>
-          <p>Variedad de plántulas disponibles en temporada.</p>
-          <a class="ask" href="https://wa.me/529541270356?text=Hola,%20quiero%20ver%20qu%C3%A9%20plantas%20tienen%20disponibles%20en%20el%20vivero" target="_blank" rel="noopener">
-            <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.6c1.7.9 3.6 1.4 5.8 1.4C22.6 28.8 28 23.4 28 16.8 28 8.4 22.6 3 16 3zm0 21.9c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.9.7.8-3.8-.2-.4c-1-1.6-1.5-3.4-1.5-5.3C5.8 10.5 10.3 6 16 6c2.7 0 5.1 1 7 2.9 1.9 1.9 2.9 4.4 2.9 7-.1 5.5-4.5 9-9.9 9z"/></svg>
-            Preguntar
-          </a>
-        </div>
-      </div>
-      <div class="cat-item">
-        <img src="img/citricos-fila.jpg" alt="Árboles listos para venta">
-        <div class="body">
-          <h4>Árboles listos</h4>
-          <p>Ejemplares desarrollados listos para sembrar.</p>
-          <a class="ask" href="https://wa.me/529541270356?text=Hola,%20me%20interesan%20los%20%C3%A1rboles%20listos%20para%20sembrar" target="_blank" rel="noopener">
-            <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.6c1.7.9 3.6 1.4 5.8 1.4C22.6 28.8 28 23.4 28 16.8 28 8.4 22.6 3 16 3zm0 21.9c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.9.7.8-3.8-.2-.4c-1-1.6-1.5-3.4-1.5-5.3C5.8 10.5 10.3 6 16 6c2.7 0 5.1 1 7 2.9 1.9 1.9 2.9 4.4 2.9 7-.1 5.5-4.5 9-9.9 9z"/></svg>
-            Preguntar
-          </a>
-        </div>
-      </div>
+    <div class="gallery" id="viveroGallery">
+      <figure class="gal-item"><img src="img/coco-1.jpg" alt="Plántulas de cocotero en bolsa, listas para trasplante" loading="lazy"><figcaption><span class="tag">Coco</span><b>Plántulas de coco</b></figcaption></figure>
+      <figure class="gal-item"><img src="img/coco-3.jpg" alt="Hileras de palma de coco en el vivero" loading="lazy"><figcaption><span class="tag">Coco</span><b>Palmas de coco</b></figcaption></figure>
+      <figure class="gal-item"><img src="img/coco-joven.jpg" alt="Palma de coco joven de hoja abierta" loading="lazy"><figcaption><span class="tag">Coco</span><b>Coco joven</b></figcaption></figure>
+      <figure class="gal-item"><img src="img/coco-2.jpg" alt="Semillero de palma de coco en crecimiento" loading="lazy"><figcaption><span class="tag">Coco</span><b>Semillero de coco</b></figcaption></figure>
+      <figure class="gal-item"><img src="img/mango.jpg" alt="Árboles de mango injertado en hilera" loading="lazy"><figcaption><span class="tag">Frutal</span><b>Mango injertado</b></figcaption></figure>
+      <figure class="gal-item"><img src="img/guayaba.jpg" alt="Plantas de guayaba de buen tamaño" loading="lazy"><figcaption><span class="tag">Frutal</span><b>Guayaba</b></figcaption></figure>
+      <figure class="gal-item"><img src="img/arbol-frutal.jpg" alt="Árbol frutal injertado listo para sembrar" loading="lazy"><figcaption><span class="tag">Frutal</span><b>Árbol injertado</b></figcaption></figure>
+      <figure class="gal-item"><img src="img/citricos-vivero.jpg" alt="Cítricos en bolsa listos para venta" loading="lazy"><figcaption><span class="tag">Cítrico</span><b>Cítricos</b></figcaption></figure>
+      <figure class="gal-item"><img src="img/citricos-fila.jpg" alt="Hileras de cítricos injertados en el vivero" loading="lazy"><figcaption><span class="tag">Cítrico</span><b>Hileras de cítricos</b></figcaption></figure>
+      <figure class="gal-item"><img src="img/huerta-citricos.jpg" alt="Huerta de cítricos en producción" loading="lazy"><figcaption><span class="tag">Cítrico</span><b>Huerta de cítricos</b></figcaption></figure>
+      <figure class="gal-item"><img src="img/palma-vivero.jpg" alt="Plántulas de vivero alineadas en el terreno" loading="lazy"><figcaption><span class="tag">Vivero</span><b>Plántulas de vivero</b></figcaption></figure>
     </div>
 
-    <!-- Cultivos -->
-    <p class="cat-title">🌾 Cultivos — nuestra producción</p>
-    <div class="carousel" data-carousel>
-      <div class="carousel-viewport">
-        <figure class="carousel-slide active"><img src="img/maiz.jpg" alt="Maíz"><figcaption>Maíz</figcaption></figure>
-        <figure class="carousel-slide"><img src="img/platano.jpg" alt="Plátano"><figcaption>Plátano</figcaption></figure>
-        <figure class="carousel-slide"><img src="img/huerta-citricos.jpg" alt="Limón"><figcaption>Limón</figcaption></figure>
-        <figure class="carousel-slide"><img src="img/coco-joven.jpg" alt="Coco"><figcaption>Coco</figcaption></figure>
-        <figure class="carousel-slide"><img src="img/girasoles.jpg" alt="Girasol"><figcaption>Girasol</figcaption></figure>
-        <figure class="carousel-slide"><img src="img/tractor.jpg" alt="Trabajo de campo"><figcaption>Trabajo de campo</figcaption></figure>
-      </div>
-      <button class="carousel-btn prev" aria-label="Anterior">‹</button>
-      <button class="carousel-btn next" aria-label="Siguiente">›</button>
-      <div class="carousel-counter"><span class="cur">1</span>/6</div>
+    <div class="vivero-cta">
+      <a class="btn btn-wa" href="https://wa.me/529541270356?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20los%20%C3%A1rboles%20y%20plantas%20del%20vivero" target="_blank" rel="noopener">
+        <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.6c1.7.9 3.6 1.4 5.8 1.4C22.6 28.8 28 23.4 28 16.8 28 8.4 22.6 3 16 3zm0 21.9c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.9.7.8-3.8-.2-.4c-1-1.6-1.5-3.4-1.5-5.3C5.8 10.5 10.3 6 16 6c2.7 0 5.1 1 7 2.9 1.9 1.9 2.9 4.4 2.9 7-.1 5.5-4.5 9-9.9 9zm5.4-7.4c-.3-.2-1.8-.9-2-1s-.5-.1-.7.2-.8 1-.9 1.2-.4.2-.6.1c-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1s0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5s0-.4 0-.5c-.1-.2-.7-1.6-.9-2.2s-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1-1 2.5 1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4s.2-1.3.2-1.4c-.1-.1-.3-.2-.5-.3z"/></svg>
+        Pregunta por disponibilidad y precios
+      </a>
     </div>
-    <div class="carousel-dots"></div>
-
-    <!-- Animales -->
-    <p class="cat-title">🐖 Animales — crianza</p>
-    <div class="carousel" data-carousel>
-      <div class="carousel-viewport">
-        <figure class="carousel-slide active"><img src="img/cerdos.jpg" alt="Cerdos de engorda"><figcaption>Cerdos de engorda</figcaption></figure>
-        <figure class="carousel-slide"><img src="img/borregos.jpg" alt="Borregos"><figcaption>Borregos (pelibuey)</figcaption></figure>
-        <figure class="carousel-slide"><img src="img/gallinas.jpg" alt="Gallinas"><figcaption>Gallinas ponedoras</figcaption></figure>
-        <figure class="carousel-slide"><img src="img/pollos.jpg" alt="Pollos"><figcaption>Pollos de engorda</figcaption></figure>
-        <figure class="carousel-slide"><img src="img/guajolotes.jpg" alt="Guajolotes"><figcaption>Guajolotes (pavos)</figcaption></figure>
-      </div>
-      <button class="carousel-btn prev" aria-label="Anterior">‹</button>
-      <button class="carousel-btn next" aria-label="Siguiente">›</button>
-      <div class="carousel-counter"><span class="cur">1</span>/5</div>
-    </div>
-    <div class="carousel-dots"></div>
   </div>
 </section>
 
@@ -279,13 +212,13 @@
 <footer>
   <div class="container">
     <div class="brand">
-      <img src="img/logo.jpg" alt="Logo" style="width:44px;height:44px;border-radius:50%;">
+      <img src="img/logo.png" alt="Logo" style="width:48px;height:auto;">
       <span>Granja La Esperanza</span>
     </div>
     <p>Movimiento Internacional 24 Horas de Alcohólicos Anónimos · Pinotepa Nacional, Oaxaca</p>
     <div class="fnav">
       <a href="#nosotros">Nosotros</a>
-      <a href="#instalaciones">Instalaciones</a>
+      <a href="#galeria">Galería</a>
       <a href="#proceso">Ingreso</a>
       <a href="#granja">Vivero</a>
       <a href="#ubicacion">Ubicación</a>
@@ -303,6 +236,16 @@
   <a class="fab fab-call" href="tel:+529541270356" aria-label="Llamar">
     <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.53 15.53 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.57 1 1 0 0 1-.24 1.02l-2.2 2.2z"/></svg>
   </a>
+</div>
+
+<!-- ===== LIGHTBOX ===== -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lb-close" aria-label="Cerrar">✕</button>
+  <button class="lb-nav lb-prev" aria-label="Anterior">‹</button>
+  <button class="lb-nav lb-next" aria-label="Siguiente">›</button>
+  <div class="lb-counter"><span id="lbCur">1</span> / <span id="lbTotal">1</span></div>
+  <img id="lbImg" src="" alt="">
+  <div class="lb-cap" id="lbCap"></div>
 </div>
 
 <script src="assets/js/main.js"></script>
